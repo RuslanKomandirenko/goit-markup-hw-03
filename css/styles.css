@@ -31,9 +31,9 @@ ul {
 }
 
 img {
-display: block;
-max-width: 100%;
-height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
@@ -42,26 +42,30 @@ height: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  }
+}
 
 /* Header */
 
 .top-header {
-border-bottom: 1px solid var(--header-border-color);
+  border-bottom: 1px solid var(--header-border-color);
 }
 
 .header {
   display: flex;
   align-items: center;
   margin-top: 0;
-  }
+}
 
 /* Logo */
 
-.list {
+ul {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 .span {
@@ -71,6 +75,7 @@ border-bottom: 1px solid var(--header-border-color);
 }
 
 .logo {
+  display: block;
   color: var(--logo-color);
   font-family: Raleway, sans-serif;
   font-size: 26px;
@@ -201,14 +206,14 @@ border-bottom: 1px solid var(--header-border-color);
 }
 
 .portfolio-item {
-  flex-basis: calc(100%/3-30px);
+  flex-basis: calc(100% / 3-30px);
   margin-left: 30px;
   margin-top: 30px;
 }
 
 .portfolio-works .link {
   text-decoration: none;
-  }
+}
 
 .portfolio-works .title {
   font-weight: 700;
@@ -234,9 +239,9 @@ border-bottom: 1px solid var(--header-border-color);
 .item-content {
   padding-top: 20px;
   padding-bottom: 20px;
-  border-bottom: 1px solid #EEEEEE;
-  border-left: 1px solid #EEEEEE; 
-  border-right: 1px solid #EEEEEE;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 }
 
 /* Features */
@@ -248,18 +253,18 @@ border-bottom: 1px solid var(--header-border-color);
 .features {
   margin-top: 0;
   margin-bottom: 0;
-  }
+}
 
-  .feature-list {
-    display: flex;
-  }
-  
-  .feature-list .item {
-    width: 270px;
-    margin-left: 30px;
-  }
+.feature-list {
+  display: flex;
+}
 
- .feature-list .title {
+.feature-list .item {
+  width: 270px;
+  margin-left: 30px;
+}
+
+.feature-list .title {
   margin-top: 0;
   margin-bottom: 10px;
   padding-top: 0;
@@ -287,7 +292,7 @@ border-bottom: 1px solid var(--header-border-color);
   padding-bottom: 94px;
   margin-top: 0;
   margin-bottom: 0;
-  }
+}
 
 .we-working {
   margin-top: 0;
@@ -317,7 +322,7 @@ border-bottom: 1px solid var(--header-border-color);
   margin-top: 0;
   margin-bottom: 50px;
   padding-top: 0;
-  padding-bottom:0;
+  padding-bottom: 0;
 }
 
 .section-title .team {
@@ -325,25 +330,24 @@ border-bottom: 1px solid var(--header-border-color);
   margin-bottom: 0;
   padding-top: 0;
   padding-bottom: 50px;
-  }
+}
 
-  .team-list {
-    display: flex;
-  }
+.team-list {
+  display: flex;
+}
 
-  .team-list .item {
-    width: 270px;
-  }
+.team-list .item {
+  width: 270px;
+}
 
-  .team-list .item + .item {
-    margin-left: 30px;
-    
-  }
+.team-list .item + .item {
+  margin-left: 30px;
+}
 
-  .team-worker {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
+.team-worker {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
 .team-list .title {
   color: var(--title-text-color);
@@ -354,7 +358,7 @@ border-bottom: 1px solid var(--header-border-color);
   margin-bottom: 10px;
   padding: 0;
   text-align: center;
-  }
+}
 
 .team-list .text {
   font-size: 16px;
@@ -383,7 +387,7 @@ border-bottom: 1px solid var(--header-border-color);
   display: inline-block;
   margin-top: 30px;
   margin-bottom: 0;
-  }
+}
 
 .portfolio-button {
   display: flex;
@@ -419,17 +423,17 @@ border-bottom: 1px solid var(--header-border-color);
 
 /* Footer */
 
+.footer {
+  background: var(--hero-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .footer-site {
   padding-top: 0;
   padding-bottom: 0;
   margin-top: 0;
   margin-bottom: 0;
- }
-
-.footer {
-  background: var(--hero-bg-color);
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .footer .logo {
@@ -441,30 +445,31 @@ border-bottom: 1px solid var(--header-border-color);
   margin-bottom: 20px;
   padding-top: 0;
   padding-bottom: 0;
+}
 
-  .address {
+.footer-nav {
+  text-decoration: none;
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
-  color: var(--hero-text-color);
-  margin-top: 0;
-  margin-bottom: 9px;
-  padding-top: 0;
-  padding-bottom: 0;
   width: 231px;
 }
 
-.footer-nav .link {
+.address {
   font-style: normal;
-  font-size: 14px;
-  line-height: 1.7;
-  color: var(--footer-link-color);
-  text-decoration: none;
+}
+
+.map-address {
+  color: var(--hero-text-color);
   margin-top: 0;
   margin-bottom: 9px;
-  padding-top: 0;
-  padding-bottom: 9px;
-  width: 231px;
+}
+
+a.link {
+  text-decoration: none;
+  color: var(--footer-link-color);
+  margin-top: 0;
+  margin-bottom: 9px;
 }
 
 .footer-nav .link:hover,
