@@ -25,6 +25,11 @@
   letter-spacing: 0.03em;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+}
+
 img {
 display: block;
 max-width: 100%;
@@ -41,16 +46,15 @@ height: auto;
 
 /* Header */
 
+.top-header {
+border-bottom: 1px solid var(--header-border-color);
+}
+
 .header {
   display: flex;
   align-items: center;
   margin-top: 0;
-  margin-bottom: 11px;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  border-bottom: 1px solid var(--header-border-color);
-  px;
-}
+  }
 
 /* Logo */
 
@@ -144,8 +148,6 @@ height: auto;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 0px;
-  padding-top: 200px;
-  padding-bottom: 30px;
   min-width: 696px;
 }
 
@@ -153,6 +155,9 @@ height: auto;
   background: var(--hero-bg-color);
   text-align: center;
   max-width: 1600px;
+  padding-top: 200px;
+  padding-bottom: 280px;
+  margin: 0 auto;
 }
 
 .hero-text .button:hover {
@@ -179,8 +184,8 @@ height: auto;
 /* Portfolio works */
 
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 84px;
+  padding-bottom: 104px;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -210,26 +215,37 @@ height: auto;
   font-size: 18px;
   line-height: 2;
   color: var(--title-text-color);
+  margin-top: 0;
+  margin-bottom: 4px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .portfolio-works .text {
   font-size: 16px;
   line-height: 1.9;
   color: var(--primary-text-color);
-  margin-top: 4px;
+  margin-top: 0px;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .item-content {
-  padding: 20px 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   border-bottom: 1px solid #EEEEEE;
   border-left: 1px solid #EEEEEE; 
   border-right: 1px solid #EEEEEE;
 }
 
 /* Features */
-.features {
-  padding-top: 83px;
+.section-features {
+  padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.features {
   margin-top: 0;
   margin-bottom: 0;
   }
@@ -291,12 +307,17 @@ height: auto;
 
 /* Team */
 
+.section-team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .team {
   max-width: 1600px;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 50px;
   padding-top: 0;
-  padding-bottom: 94px;
+  padding-bottom:0;
 }
 
 .section-title .team {
@@ -310,8 +331,18 @@ height: auto;
     display: flex;
   }
 
+  .team-list .item {
+    width: 270px;
+  }
+
   .team-list .item + .item {
     margin-left: 30px;
+    
+  }
+
+  .team-worker {
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
 .team-list .title {
@@ -319,15 +350,18 @@ height: auto;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  margin: 30px 59px 10px 60px;
+  margin-top: 0;
+  margin-bottom: 10px;
   padding: 0;
+  text-align: center;
   }
 
 .team-list .text {
   font-size: 16px;
   line-height: 1.19;
-  margin: 0 70px 30px;
+  margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 /* Button */
@@ -348,7 +382,7 @@ height: auto;
   padding: 10px 32px;
   display: inline-block;
   margin-top: 30px;
-  margin-bottom: 200px;
+  margin-bottom: 0;
   }
 
 .portfolio-button {
@@ -363,7 +397,7 @@ height: auto;
 
 .portfolio-button .item + .item {
   display: flex;
-  margin-left: 30px;
+  margin-left: 8px;
 }
 
 .portfolio-button .list {
@@ -373,7 +407,7 @@ height: auto;
   color: var(--title-text-color);
   max-width: 145px;
   padding: 6px 22px;
-  margin-top: 100px;
+  margin-top: 0;
   margin-bottom: 56px;
 }
 
@@ -386,15 +420,16 @@ height: auto;
 /* Footer */
 
 .footer-site {
-  width: 1600px;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 0;
+  padding-bottom: 0;
   margin-top: 0;
   margin-bottom: 0;
  }
 
 .footer {
   background: var(--hero-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer .logo {
@@ -402,16 +437,20 @@ height: auto;
   font-size: 26px;
   line-height: 1.19;
   color: var(--hero-text-color);
-  margin: 0 1240px 20px 215px;
-  padding: 0;
-}
-.address {
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  .address {
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
   color: var(--hero-text-color);
-  margin: 0 1154px 9px 215px;
-  padding: 0;
+  margin-top: 0;
+  margin-bottom: 9px;
+  padding-top: 0;
+  padding-bottom: 0;
   width: 231px;
 }
 
@@ -421,8 +460,10 @@ height: auto;
   line-height: 1.7;
   color: var(--footer-link-color);
   text-decoration: none;
-  margin: 0 1154px 9px 215px ;
-  padding: 0;
+  margin-top: 0;
+  margin-bottom: 9px;
+  padding-top: 0;
+  padding-bottom: 9px;
   width: 231px;
 }
 
